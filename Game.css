@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #050e2d;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1b2141;
+    transition: 0.5s;
+    z-index: 1000;
+}
+header .sticky{
+    background: #1b2141;
+    box-shadow: 0 5px 10px #1b2141;
+}
+header .iogo{
+     position: relative;
+     color: wheat;
+     text-decoration: none;
+     font-size: 2em;
+     font-weight: 700;
+}
+
+/* lolo */
+.lolo{
+    padding: 0px 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+}
+.lolo h2{
+    color: #fff;
+    margin: 10px 0;
+}
+.lolo ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.lolo ul li{
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #fff;
+}
+.lolo ul li.koi{
+    background: #1aeeef;
+    color: #050e2d;
+    box-shadow: 0 0 10px #1aeeef;
+}
+.lolo .caca{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.lolo .caca .card{
+    width: 200px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    background: #1b2141;
+    overflow: hidden;
+}
+.lolo .caca .card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.lolo .caca .card .po{
+    padding: 10px;
+}
+.lolo .caca .card .po h4{
+    color: #fff;
+    margin: 15px 0;
+}
+.lolo .caca .card .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #35407e;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transform: scaleX(1);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
+}
+.lolo .caca .card .progress-line span{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background: #1aeeef;
+    box-shadow: 0 0 10px #1aeeef;
+    transform: scaleX(1);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(0);
+    }
+}
+.lolo .caca .card .info{
+    border-top: 2px solid #35407e;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lolo .caca .card .info a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #1aeeef;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.lolo .caca .card .info a:hover{
+    background: #1aeeef;
+    border: none;
+    color: #050e2d;
+    box-shadow: 8 0 10px #1aeeef;
+}
+.lolo .caca .card .hide{
+    display: none;
+}
+
+/* footar */
+footer{
+    padding: 10px 100px;
+}
+footer .in{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .in .popo{
+    position: relative;
+    color: #dbd9b9;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+footer .in p{
+    color: #dbd9b9;
+}
+footer .in ul a{
+    color: rgb(0, 0, 0);
+}
+footer .in ul{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .in ul li{
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #1aeeef;
+}
+footer .in ul li:hover{
+    background: #1aeeef;
+    border: none;
+    box-shadow: 0 0 10px #1aeeef;
+}
+footer .in ul li a i{
+    font-size: 1.5em;
+    color: #fff;
+}
+footer .in ul li:hover a i{
+    color: #050e2d;
+}
+.animex{
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.animex .active{
+    transform: translateY(0px);
+    opacity: 1;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CG Game</title>
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://png.pngtree.com/png-vector/20190507/ourmid/pngtree-samurai-skull-esports-logo-gaming-mascot-png-image_1030880.jpg"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="google-site-verification=UIt_EyrkAmz0KQ_cIvyX4knUUM0EcmNQbE_HoEoqm0g">
+</head>
+<body>
+    <header>
+        <a  class="iogo">CG Game</a>
+    </header>
+
+    <!---Home Fo-->
+    <div class="fo " id="home">
+        <div class="bg">
+            <div class="nono">
+                <h2>CG Game<br></h2>
+                <p></p>
+                <a href=Game.html class="lolo">Play</a>
+            </div>
+            <img src="https://codewithsadee.github.io/gamics/assets/images/hero-banner.png">
+        </div>
+    </div>
+
+            <!--Footer-->
+            <footer>
+                <div class="in">
+                    <a class="popo">Game</a>
+                    <p><i></i>GC All Game</p>
+                    <ul class="opo">
+                        <li><a href="https://web.facebook.com/chaimongkond.yodkaeww/">F</a><i></i></li>
+                        <li><a>Gmali</a><i></i></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+     </div>
+        
+    <script>
+        /* sticky navbar */
+        window.addEventListener('scroll',function(){
+            var header = document.querySelector('header');
+            header.classList.togg('sticky'.window.scrolly > 5);
+        })
+
+        /* filitersble cards */
+
+        let list = document.querySelectorAll('.list');
+        let card = document.querySelectorAll('.card');
+
+        for(let i = 0; i<list.length; i++){
+        list[i].addEventListener('click',function(){
+        for(let j=0; j<list.length; j++){
+            list[j].classList.remove('active');
+        }
+        this.classList.add('active');
+
+        let datafilter = this.getAttribute('data-filter');
+
+        for(let k=0; k<card.length; k++)
+        {
+            card[k].classList.remove('active');
+            card[k].classList.add('hide');
+
+            if(card[k].getAttribute('data-item') == datafilter || datafilter == 'all'){
+                card[k].classList.remove('hide');
+                card[k].classList.add('active');
+
+            }
+        }
+    })
+}
+    </script>
+</body>
+</html>
