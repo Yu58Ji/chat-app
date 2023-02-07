@@ -78,7 +78,6 @@ header .iogo{
 .lolo .caca .card{
     width: 200px;
     border-radius: 10px;
-    margin: 20px 40px;
     background: #1b2141;
     overflow: hidden;
 }
@@ -172,26 +171,10 @@ footer .in ul a{
     color: rgb(0, 0, 0);
 }
 footer .in ul{
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: antiquewhite;
 }
 footer .in ul li{
-    list-style: none;
-    height: 50px;
-    width: 50px;
-    margin: 5px;
-    border-radius: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #1aeeef;
-}
-footer .in ul li:hover{
-    background: #1aeeef;
-    border: none;
-    box-shadow: 0 0 10px #1aeeef;
 }
 footer .in ul li a i{
     font-size: 1.5em;
@@ -209,4 +192,13 @@ footer .in ul li:hover a i{
 .animex .active{
     transform: translateY(0px);
     opacity: 1;
+}
+@media (max-width: 991px)
+{
+    .lolo .caca .card {
+        width: 200px;
+        border-radius: 10px;
+        background: #1b2141;
+        overflow: hidden;
+    }
 }
