@@ -100,8 +100,21 @@ footer .in .popo{
     font-size: 2em;
     font-weight: 700;
 }
-footer .in p{
-    color: #dbd9b9;
+footer .in ul li{
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #1aeeef;
+}
+footer .in ul li:hover{
+    background: #1aeeef;
+    border: none;
+    box-shadow: 0 0 10px #1aeeef;
 }
 footer .in ul a{
     color: rgb(0, 0, 0);
@@ -144,4 +157,21 @@ footer .in ul li:hover a i{
 .animex .active{
     transform: translateY(0px);
     opacity: 1;
+}
+@media (max-width: 991px)
+{
+    .fo .bg img {
+        width: 385px;
+    }
+    .fo .bg img {
+        position: absolute;
+    }
+    .fo .bg .nono {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        background: rgb(27 33 65) 50%;
+        z-index: 1;
+        border-radius: 10px;
+    }
 }
